@@ -22,19 +22,66 @@
   <body class="raleway">
     <header>
       <nav class="bg-linear-to-r from-gray-300 to-gray-400 shadow-md">
-        <div class="flex justify-between py-2 container mx-auto items-center">
-          <h2 class="text-3xl font-bold">VerbalizeIt</h2>
-          <div class="flex justify-between gap-5 text-xs font-medium">
+        <div
+          class="flex justify-between py-2 container mx-auto items-center px-2 md:px-0"
+        >
+          <h2 class="text-2xl md:text-3xl font-bold">VerbalizeIt</h2>
+          <div
+            class="flex justify-between gap-5 text-xs font-medium hidden md:inline-flex"
+          >
             <p>Service</p>
             <p>Blog</p>
             <p>About Us</p>
             <p>Contact</p>
           </div>
           <button
-            class="btn btn-warning rounded-full font-bold text-black outline-none"
+            class="btn btn-warning rounded-full font-bold text-black outline-none hidden md:inline-flex"
           >
             Register
           </button>
+          <!-- Sidebar -->
+          <div class="inline-block md:hidden">
+            <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+            <div class="drawer-content flex flex-col">
+              <div class="bg-transparent">
+                <div>
+                  <label for="my-drawer-2" aria-label="open sidebar">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      class="inline-block h-6 w-6 stroke-current"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"
+                      ></path>
+                    </svg>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="drawer-side">
+              <label
+                for="my-drawer-2"
+                aria-label="close sidebar"
+                class="drawer-overlay"
+              ></label>
+              <ul class="menu bg-base-200 min-h-full w-50 p-4">
+                <!-- Sidebar content here -->
+                <li class="gap-2">
+                  <a class="btn rounded-full btn-warning text-black">Service</a>
+                  <a class="btn rounded-full btn-warning text-black">Blog</a>
+                  <a class="btn rounded-full btn-warning text-black"
+                    >About Us</a
+                  >
+                  <a class="btn rounded-full btn-warning text-black">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </nav>
       <hr />
