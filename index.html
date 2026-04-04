@@ -17,13 +17,15 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>VerbalizeIt-Language-Learning-WebApp</title>
+    <link rel="shortcut icon" href="./Assets/icon.png" type="image/x-icon" />
+    k
     <link rel="stylesheet" href="./tailwind.css" />
   </head>
   <body class="raleway">
     <header>
-      <nav class="bg-linear-to-r from-gray-300 to-gray-400 shadow-md">
+      <nav class="fixed top-0 z-10 w-full shadow-sm bg-gray-200">
         <div
-          class="flex justify-between py-2 container mx-auto items-center px-2 md:px-0"
+          class="flex justify-between py-1.5 items-center px-2 md:px-0 container mx-auto"
         >
           <h2 class="text-2xl md:text-3xl font-bold">VerbalizeIt</h2>
           <div
@@ -84,7 +86,40 @@
           </div>
         </div>
       </nav>
-      <hr />
+      <section class="container mx-auto px-2 md:px-0 pt-20">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-10"
+        >
+          <div class="left space-y-5 w-full md:w-2/3">
+            <h2
+              class="text-7xl md:text-8xl lg:text-9xl font-semibold tracking-tight"
+            >
+              We make you learn language easily!
+            </h2>
+            <p class="text-xl">
+              We help you learn language easily, witjh small lessons , you`ll
+              earn points and unlock new levels while improving you rel world
+              communications.
+            </p>
+            <form class="flex gap-5">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="rounded-full pl-5 outline-none bg-gray-200 border-none w-58"
+              />
+              <button
+                type="submit"
+                class="btn btn-warning rounded-full text-black"
+              >
+                Get Started
+              </button>
+            </form>
+          </div>
+          <div class="right">
+            <img src="./Assets/mobile.png" alt="" class="h-full" />
+          </div>
+        </div>
+      </section>
     </header>
   </body>
 </html>
