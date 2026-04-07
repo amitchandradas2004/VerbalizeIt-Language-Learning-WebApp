@@ -3,7 +3,7 @@
 ## 🚀 Overview
 VerbalizeIt is a clean, modern, and responsive landing page designed for a language learning platform. It focuses on user engagement, clarity, and conversion using a minimal and attractive UI.
 
-## 📸 [Live Preview]()
+## 📸 [Live Preview](https://amitchandradas2004.github.io/VerbalizeIt-Language-Learning-WebApp/)
 
 ## ✨ Features
 - Responsive design (mobile-first)
